@@ -24,8 +24,8 @@ def test_multiply(math_ops):
 
 def test_divide(math_ops):
     assert math_ops.divide(10, 2) == 5
-    # with pytest.raises(ValueError, match="Cannot divide by zero."):
-    #     math_ops.divide(10, 0)
+    with pytest.raises(ValueError, match="Cannot divide by zero."):
+        math_ops.divide(10, 0)
 
 
 def test_power(math_ops):
