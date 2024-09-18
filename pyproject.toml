@@ -14,7 +14,19 @@ pytest = "^8.3.3"
 coverage = "^7.6.1"
 
 [tool.coverage.run]
+branch = true
+source = ["src"]
 dynamic_context = "test_function"
+
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
+# omit = ["tests/*", "your_module_name/__init__.py"]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
 
 [build-system]
 requires = ["poetry-core"]
