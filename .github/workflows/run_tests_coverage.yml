@@ -64,3 +64,4 @@ jobs:
       - name: Run tests and generate coverage
         run: |
           poetry run coverage run -m pytest
+          poetry run coverage report -m
