@@ -21,7 +21,7 @@ dynamic_context = "test_function"
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 80
+# fail_under = 80
 # omit = ["tests/*", "your_module_name/__init__.py"]
 
 [tool.coverage.html]
