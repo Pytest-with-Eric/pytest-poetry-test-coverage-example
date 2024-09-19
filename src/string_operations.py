@@ -1,4 +1,4 @@
-class StringOperations:  # pragma: no cover
+class StringOperations:
 
     def capitalize(self, text: str) -> str:
         return text.capitalize()
